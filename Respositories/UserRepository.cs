@@ -2,6 +2,7 @@ using ModelsUser.User;
 
 namespace RepositoriesUserRepository.UserRepository;
 
+
 public interface IUserRepository
 {
     public Task<IEnumerable<User>> GetAll();
