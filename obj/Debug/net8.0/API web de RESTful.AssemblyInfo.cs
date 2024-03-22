@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("API web de RESTful")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b908f8b9859b7ed542073cffaef34f1d6451a277")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e3305eeb05cd0dc3f2d6edc0c2cb2fae3c0e126")]
 [assembly: System.Reflection.AssemblyProductAttribute("API web de RESTful")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API web de RESTful")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

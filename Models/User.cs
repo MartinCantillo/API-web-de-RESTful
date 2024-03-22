@@ -1,16 +1,19 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ModelsUser.User;
 public class User
 {
-    private int Id_User { set; get; }
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    public int Id_User { set; get; }
 
     [Required]
 
     [EmailAddress(ErrorMessage = "Username invalido")]
-    private String Username { set; get; }
+    String Username { set; get; }
     [Required]
-    private String Password { set; get; }
+    public String Password { set; get; }
     public User(String Username, String Password)
     {
         this.Username = Username;
