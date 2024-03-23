@@ -18,14 +18,24 @@ public class ApiRestController : ControllerBase
 
     //Metodo para guardar un usuario
     [HttpPost("postUser")]
-    public async Task <IActionResult> addUser(User user){
-       await  this._userService.AddUser(user);
-       return Ok("User Added");
+    public async Task<IActionResult> addUser(User user)
+    {
+        if (ModelState.IsValid)
+        {
+            await this._userService.AddUser(user);
+            return Ok("User Added");
+        }
+        else
+        {
+            return BadRequest();
+        }
+
     }
 
     //Metodo para obtener todos los usuarios 
     [HttpGet("GetAll")]
-    public async Task<IEnumerable<User>> GetAll(){
+    public async Task<IEnumerable<User>> GetAll()
+    {
         return await this._userService.GetAll();
     }
 }
