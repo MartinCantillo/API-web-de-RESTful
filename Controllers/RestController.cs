@@ -6,12 +6,12 @@ using ServicesUserService.UserService;
 namespace APIRESTful.Controllers;
 [ApiController]
 [Route("[controller]")]
-public class ApiController : ControllerBase
+public class ApiRestController : ControllerBase
 {
     //inyeccion de dependencia
     private readonly UserService _userService;
 
-    public ApiController(UserService _userService)
+    public ApiRestController(UserService _userService)
     {
         this._userService = _userService;
     }
