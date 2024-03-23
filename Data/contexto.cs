@@ -12,4 +12,6 @@ public class BDContext : DbContext
     //Mapear las tablas en la bd con dbset
     public DbSet<User> Users { get; set; }
     public DbSet<Residente> Residentes { get; set; }
+
+    
 }

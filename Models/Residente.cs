@@ -6,11 +6,10 @@ namespace ModelResidente.Residente;
 
 public class Residente
 {
-    public Residente(String Nombre_residente, String Num_apartamento, User usuario, String Num_telefono)
+    public Residente(String Nombre_residente, String Num_apartamento,  String Num_telefono)
     {
         this.Nombre_residente = Nombre_residente;
         this.Num_apartamento = Num_apartamento;
-        this.usuario = usuario;
         this.Num_telefono = Num_telefono;
     }
 
