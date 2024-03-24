@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using DataContext.Context;
 using ServicesUserService.UserService;
+using RepositoriesUserRepository.UserRepository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +10,7 @@ builder.Services.AddDbContext<BDContext>(options =>
     options.UseMySQL("server=localhost;port=3306;database=bdroles;user=root;"));
 
 // Agregar el servicio UserService al contenedor, aqui agrego todos los servicios necesarios para que la ioc me la reconozca
-builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<IUserRepository,UserService>();
 
 builder.Services.AddControllers();
 //Agregar Swager
